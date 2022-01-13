@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let a = [
+         [1,2,3,4],
+         [2,-4,8,7],
+         [7,8,15,4],
+         [1,4,5,6]
+ ]
+  //Tong duong cheo chinh
+ let sum = 0;
+ for (let i = 0; i < a.length; i++) {
+   sum += a[i][i];
+ }
+document.writeln("Tong duong cheo chinh = "+ sum + "<br>")
+ //Tong duong cheo phu
+ let sum2 = 0;
+ for (let i = 0; i < a.length; i++) {
+   sum2 +=a[i][a.length-1-i]
+ }
+ document.write("Tong duong cheo phu = "+ sum2 + "<br>")
+ //Tong cac hang
+ for (let i = 0; i < a.length; i++) {
+   let sum3 = 0;
+   for (let j = 0; j < a[i].length; j++) {
+     sum3 += a[i][j]
+   }
+   document.write("Tong cac hang la " + sum3)
+   document.write("<br>")
+ }
+ //Tong cac cot
+ for (let i = 0; i < a.length; i++) {
+   let sum4 = 0;
+   for (let j = 0; j < a[i].length; j++) {
+     sum4 += a[j][i]
+   }
+   document.write("Tong cac cot la " + sum4)
+   document.write("<br>")
+ }
+</script>
+</body>
+</html>
